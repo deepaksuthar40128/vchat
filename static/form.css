@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(bg1.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#mainbox{
+    width: 502px;
+    margin: 139px auto;
+}
+#formbox input{
+    display: block;
+    width: 400px;
+    font-size: 22px;
+    margin: 40px auto 0px auto;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #aa38df;
+    border-radius: 4px;
+    font-weight: 100;
+    font-family: 'PT Serif', serif;
+    color: #ffffff;
+}
+#name::placeholder{
+    font-family: 'PT Serif', serif;
+    color: #aa38df;
+}
+#email::placeholder{
+    font-family: 'PT Serif', serif;
+    color: #aa38df;
+}
+#password::placeholder{
+    font-family: 'PT Serif', serif;
+    color: #aa38df;
+}
+#formbox button{
+    display: block;
+    width: 120px;
+    font-size: 22px;
+    margin: 40px auto 0px auto;
+    background: rgba(255, 255, 255, 0.021);
+    outline: none;
+    border: 0;
+    border-radius: 4px;
+    color: #ffffff;
+}
+#formbox button:hover{
+    background: rgba(255, 255, 255, 0.322);
+}

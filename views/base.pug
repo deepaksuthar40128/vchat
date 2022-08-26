@@ -1,0 +1,70 @@
+html 
+  head 
+     title Vchat
+     <audio id="myAudio"><source src="sound.mp3" type="audio/mp3"></audio> 
+     style 
+         include ../static/base.css 
+     block style 
+     script 
+         include ../static/base.js  
+     <script src="https://kit.fontawesome.com/d7fb88eac0.js" crossorigin="anonymous"></script>
+
+  body 
+    div.header
+     div#page 
+       ul
+         li: a(href="/code" ) code
+         li Lorem 
+         li Lorem 
+         li Lorem 
+         li Lorem 
+         li Lorem 
+         li Lorem 
+         li Lorem 
+         li Lorem 
+         li Lorem 
+         li Lorem 
+         li Lorem     
+         li Lorem 
+         li Lorem 
+         li Lorem 
+         li Lorem 
+         li Lorem 
+         li Lorem 
+         li Lorem 
+         li Lorem  
+         li Lorem 
+         li Lorem 
+         li Lorem   
+     div#moremenu 
+         <button id="btn2" onclick="hidepage()"><i id="btn2color" class="fa fa-bars" aria-hidden="true"></i></button>  
+     div.nav 
+         ul#items 
+           li: a(href="/" ) Home
+           li Services
+               ul.dropmenu
+                 li: a(href="/stopwatch" ) Stopwatch
+                 li: a(href="/calculator" ) Calculator
+                 li Lorem 
+                 li Lorem 
+           li: a(href="/hall" ) Hall
+           li Private
+             ul.dropmenu
+                 li Lorem 
+                 li Lorem 
+                 li Lorem 
+                 li Lorem 
+                 li Lorem 
+                 li Lorem 
+                 li Lorem 
+                 li Lorem 
+                 li Lorem 
+                 li Lorem 
+                 li Lorem 
+                 li Lorem 
+           li: a(href="/About" ) About
+     div#userprofile  
+             p#userinfo
+    block content 
+    <script src="/socket.io/socket.io.js"></script>
+    block script 

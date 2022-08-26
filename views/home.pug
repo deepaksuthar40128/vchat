@@ -1,0 +1,26 @@
+extend base.pug  
+
+block style  
+    Style 
+       include ../static/home.css 
+
+block content 
+   div.container 
+       div.images#subbox
+          <button id="back" class="btn" onclick="backimg()" >  <i class='fa fa-chevron-circle-left'></i></button>  
+          <button id="next" class="btn" onclick="nextimg()" >  <i class='fa fa-chevron-circle-right' ></i> </button>  
+          div.slider#images 
+            div.image  
+                a(href="/hall" class="appertext" ) Feeling Board,<br>TexT Here
+            div.image  
+                a(href="/hall" class="appertext" )  Download Codes Of Websites<br> For Free
+            div.image  
+                a(href="/hall" class="appertext" )  Acess All Codes <br> Used In YouTube Videos
+            div.image  
+                a(href="/hall" class="appertext" )  Codes For Games<br> And Animations
+            div.image  
+                a(href="/hall" class="appertext" )  Blogs And Many More...
+
+block script 
+    Script 
+      include  ../static/home.js 

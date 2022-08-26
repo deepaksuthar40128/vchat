@@ -1,0 +1,56 @@
+extend base.pug  
+
+block style  
+    Style 
+       include ../static/cal.css 
+
+block content 
+      div.cointainer
+        div.screen22
+            <p class="buffer22" id="buffer22">0</p>
+            <p class="number22" id="number22">0</p>
+        div.bottom
+            div.key
+                div.box
+                    <button class="btn pclick">Clear</button>
+                    <button class="btn OneNoFn">Sin</button>
+                    <button class="btn OneNoFn">Cos</button>
+                    <button class="btn pclick"><</button>
+                    <button class="btn twoNoFn">/</button>
+                
+                div.box
+                    <button class="btn OneNoFn">log</button>
+                    <button class="btn pclick">7</button>
+                    <button class="btn pclick">8</button>
+                    <button class="btn pclick">9</button>
+                    <button class="btn twoNoFn">x</button>
+                 
+                div.box
+                    <button class="btn OneNoFn">ln</button>
+                    <button class="btn pclick">4</button>
+                    <button class="btn pclick">5</button>
+                    <button class="btn pclick">6</button>
+                    <button class="btn twoNoFn">-</button>
+                
+                div.box
+                    <button class="btn OneNoFn">sqrt</button>
+                    <button class="btn pclick">1</button>
+                    <button class="btn pclick">2</button>
+                    <button class="btn pclick">3</button>
+                    <button class="btn twoNoFn">+</button>
+                
+                div.box
+                    <button class="btn OneNoFn">x2</button>
+                    <button class="btn twoNoFn">x^y</button>
+                    <button class="btn pclick">0</button>
+                    <button class="btn pclick">.</button>
+                    <button class="btn twoNoFn">=</button>
+
+            
+            div.history#history
+                <button id="btn" onclick="deletehistory()">History</button>
+                <hr>
+                div#historycontent       
+block script 
+    Script 
+      include  ../static/cal.js 

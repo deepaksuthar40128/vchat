@@ -1,0 +1,56 @@
+extend base.pug  
+
+block style  
+    Style 
+       include ../static/stop.css 
+
+block content 
+        div
+          div.container#container
+             div.box
+               li#hourcount.count
+               li#hourname.name Hours
+             div.box
+               li#mincount.count
+               li#minname.name Minutes
+             div.box
+               li#secondcount.count 
+               li#secondname.name Seconds
+         
+             div.box 
+               li#milisecondcount.count 
+               li#milisecondname.name Milliseconds 
+  
+        div.Buttons
+           <button onclick="btn()" id="btn"><span id="buttontext">Start</span></button>
+           <button onclick="reset()" id="reset"><span>Reset</span></button>
+           <button onclick="stamp()" id="stamp"><span>Stamp</span></button>
+           <button onclick="flush()" id="flush"><span>Clear</span></button>
+        div.stampdisplay
+             ul#ul
+                div
+                    <li id="stampno-1"></li>
+                    <li id="stampno-2"></li>
+                    <li id="stampno-3"></li>
+                    <li id="stampno-4"></li>
+                    <li id="stampno-5"></li>
+                    <li id="stampno-6"></li>
+                    <li id="stampno-7"></li>
+                    <li id="stampno-8"></li>
+                    <li id="stampno-9"></li>
+                    <li id="stampno-10"></li>
+              
+                div
+                    <li id="stampno-11"></li>
+                    <li id="stampno-12"></li>
+                    <li id="stampno-13"></li>
+                    <li id="stampno-14"></li>
+                    <li id="stampno-15"></li>
+                    <li id="stampno-16"></li>
+                    <li id="stampno-17"></li>
+                    <li id="stampno-18"></li>
+                    <li id="stampno-19"></li>
+                    <li id="stampno-20"></li>
+block script 
+    Script 
+      include  ../static/stop.js 

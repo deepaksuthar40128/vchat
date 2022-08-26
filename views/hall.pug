@@ -1,0 +1,24 @@
+extend base.pug  
+   
+block style  
+    Style 
+      include ../static/hall.css 
+block content 
+   div.box
+      div#sidebar
+          p#pera sidemenu
+      div#container 
+            div#mszscreen 
+                div#mszs
+            div#inputarea 
+                form(id='form' autocomplete="off") 
+                  input(id = 'inputedmsz' autofill = 'false' placeholder = 'Enter Your Text...' ) 
+                  button <i class="fa fa-paper-plane" aria-hidden="true"></i>
+            
+            
+            div#sidenotification
+                p#notificationcontent
+ 
+block script 
+    Script 
+      include  ../static/hall.js 

@@ -1,0 +1,110 @@
+ 
+*{
+     margin: 0;
+     padding: 0;
+ }
+body{
+    overflow-x: hidden;
+    color: white;
+}
+html::-webkit-scrollbar{
+    display: none;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+}
+#items{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    margin: 0;
+    width: 49%;
+    padding: 0;
+    height: 50px;
+    border-radius: 0px 0px 15px 15px;
+    background-color: #662a8b;
+    box-shadow: 0px 12px 16px 2px #3f2a4e;
+}
+#items li{
+    padding: 10px;
+    font-size: 24px; 
+}
+#items li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+#page{ 
+    position: absolute;
+    left: 0px;
+    width: 0px;
+    height: 100vh;
+    text-align: center;
+    transition: width 0.5s;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 10;
+}
+#page::-webkit-scrollbar{
+    display: none;
+}
+#page ul{
+ list-style: none;
+}
+#page ul li{
+ background-color: rgb(133, 133, 133);
+ color: white;
+ font-size: 22px;
+ padding: 10px 0px;
+ border-bottom: 1px dotted black;
+ font-weight: 50;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#page ul :last-child{
+ border-bottom: 0;
+}
+#btn2{
+    height: 34px;
+    width: 34px;
+    border: 0;
+    position: absolute;
+    left: 12px;
+    top: 8px;
+    background: transparent;
+    transition: left 0.5s;
+
+}
+#btn2color{
+    color: rgb(255, 255, 255);
+    background: transparent;
+    transition: all ease 0.5s;
+}
+.fa, .fas {
+    font-weight: 900;
+    color: #1081ad;
+    font-size: 27px;
+}
+#userprofile{
+    position: absolute;
+    right: 32px;
+    top: 12px;
+}
+#userinfo{
+    font-size: 25px;
+}
+.dropmenu{
+    display: none;
+    list-style: none;
+    background-color: #9935d7;
+    position: absolute;
+    top: 48px;
+    margin-left: 18px;
+    padding: 0px 10px;
+    z-index: 10;
+}
+#items li:hover .dropmenu{
+    display: block;
+}
+#items li:hover{
+    text-decoration: underline;
+}

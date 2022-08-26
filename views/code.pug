@@ -1,0 +1,21 @@
+extend base.pug 
+block style  
+  style 
+     include ../static/code.css  
+block content 
+     div.mainbox 
+        div.music_display
+           img(id="disk_img" src="music_cd.png", alt="song")
+        div.music_curser
+           img(id="curser_img" src="musin_curser.png", alt="song")
+        div.status 
+           div.song_info#songinfo
+           div#prograss
+              div#dot
+           <button id="back" class="btn" onclick="play_stop()" >  <i class='fa fa-chevron-circle-left'></i></button>  
+           <button id="nextsong" class="btn" onclick="next_song()" >  <i class='fa fa-chevron-circle-left'></i></button>  
+            
+ 
+block script 
+    Script 
+      include  ../static/code.js 

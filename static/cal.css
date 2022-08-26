@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow: hidden;
+    /* color: black; */
+    background-color: black;
+}
+.cointainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(nbg2.jpg);
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.6;
+}
+.cointainer{
+
+    width: 70%;
+    margin: 40px auto;
+    box-shadow: 0px 0px 16px 5px #353535;
+}
+.screen22{
+    /* border: 2px solid red; */
+    border-bottom: 1px dashed black;
+    font-size: 120px;
+    text-align: end;
+}
+.number22{
+    overflow: auto;
+
+}
+.number22::-webkit-scrollbar{
+    display: none;
+}
+ .buffer22{
+     font-size: 30px;
+ }
+ .bottom{
+     display: flex;
+     justify-content: space-between;
+ }
+.btn{
+    outline: none;
+    /* border: none; */
+    height: 82px;
+    width: 129px;
+    font-size: 24px;
+    margin: 2px auto;
+    background: transparent;
+    color: white;
+}
+.key{
+    width: 70%;
+   
+}
+.history{
+  
+    /* border-left: 1px solid black; */
+    /* border: 2px solid red; */
+    text-align: center;
+     
+    font-size: 25px;
+    width: 29.5%;
+    height:  430px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-shadow: inset 0px 0px 36px 6px rgb(32, 32, 32);
+}
+.history::-webkit-scrollbar {
+    width: 5px;
+  }
+  .history::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  .history::-webkit-scrollbar-thumb {
+    background-color: #666;
+    outline: 1px solid #eee;
+  }
+ #btn{
+      width: 100%;
+      height: 7%;
+      position: sticky;
+      /* top: 400px; */
+      top: 0;
+      outline: none;
+      background: transparent;
+      color: white;
+      /* border: none; */
+  }

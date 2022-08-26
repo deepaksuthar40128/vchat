@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+body{
+   background-color: black;
+   color: white;
+}
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(red,green);
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.6;
+}
+.appertext {
+    font-size: 68px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 87px;
+    font-family: 'Vollkorn', serif;
+    font-weight:lighter;
+} 
+.appertext:hover{
+     color: #ffdaf9;
+}
+.images{
+    width: 77%;
+    height: 60%;
+    margin: 120px auto 0px auto;
+    overflow: hidden;
+}
+.image{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider{
+    display: inline-flex;
+    height: 100%;
+    position: relative;
+    top: -19px;
+    left: 0;
+    transition: left 1s;
+    transition-timing-function: linear;
+    width: 5255px;
+}
+.btn{
+    position: relative;
+    z-index: 2;
+    top: 50%;
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+#next{
+    left: 99%;
+    transition: left 1s;
+}
+#back{
+    left: -5%;
+    transition: left 1s;
+}
+.fa{
+    width: 25px;
+    color: rgb(255, 255, 255);
+    background: transparent;
+    background-color: transparent;
+}
+.btn:hover .fa{
+  color: rgb(184, 184, 184);
+}

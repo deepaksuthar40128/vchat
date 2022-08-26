@@ -1,0 +1,19 @@
+extend base.pug  
+
+block style 
+     Style
+        include ../static/form.css  
+
+block content 
+   div#mainbox 
+      div#formbox
+         form(id="form" enctype="multipart/form-data" )
+            input(type="text" name= 'name' id='name' class ='mcclass' placeholder="Enter Your Name")
+            input(type="email" name="email" id='email' class ='mcclass' placeholder="Enter Your Email")
+            input(type="password" name="password" id='password' class ='mcclass' placeholder="Enter Your Password")
+            input(type="file" name="uploadimage" id='uploadimage' class ='mcclass')
+            button Login 
+              
+block script 
+      Script 
+         include ../static/form.js  
